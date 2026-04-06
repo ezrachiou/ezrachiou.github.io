@@ -7,7 +7,7 @@ const sparkles = () => {
     i.style.left = (event.pageX) + 'px';
     i.style.top = (event.pageY) + 'px';
 
-    i.style.scale = `${Math.random() * 2 + 1}`;
+    i.style.scale = `${Math.random() * 1 + 1}`;
 
     i.style.setProperty('--x', getTransitionValue()); 
     i.style.setProperty('--y', getTransitionValue());
@@ -16,12 +16,12 @@ const sparkles = () => {
 
     setTimeout(() => {
        document.body.removeChild(i);
-    }, 2000);
+    }, 1000);
 
 }
 
 const getTransitionValue = () => {
-   return `${Math.random() * 400 - 200}px`;
+   return `${Math.random() * 70 - 25}px`;
 }
 document.addEventListener('mousemove', sparkles);
 
