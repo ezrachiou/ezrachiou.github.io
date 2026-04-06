@@ -2,6 +2,39 @@
   @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow: hidden;
+}
+
+i{
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #ccea0b;
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate 
+{
+  0%{
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  100%{
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
+  }
+}
+
+
 body {
     background-color: #fffdfa;
 }
