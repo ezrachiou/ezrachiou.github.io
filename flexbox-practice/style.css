@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {box-sizing: border-box;}
+
+.flextest {
+    border: 2px dotted coral;
+    display: flex;
+}
+
+div {
+    margin: 1rem;
+    padding: 1rem;
+    flex: 1;
+    border: 2px dotted #C9CC3F;
+    background-color: #FCFBF7;
+    font-family: DotGothic16;
+}
+
+.chapter {
+    color:#C9CC3F; 
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.start {
+    text-align: center;
+}
+
+.end {
+    text-align: center; 
+    flex: 1.5;
+}
+
+.book {
+    color:#C9CC3F;
+    font-size:1.5rem;
+    text-align: center;
+}
