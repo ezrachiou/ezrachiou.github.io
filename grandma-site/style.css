@@ -4,71 +4,157 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "source-han-serif-sc", serif;
+    font-family: "tt-zhihei-chs-variable", sans-serif;
+    background: rgb(255, 253, 249);
 }
-
-
-
-
-.off-screen-menu {
-    background-color: rgb(255, 211, 79);
-    height: 100vh;
-    width: 100%;
-    max-width: 350px;
-    position: fixed;
-    top: 0;
-    right: -350px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-    font-size: 3rem; 
-    transition: .3s ease;
-    font-family: "source-han-serif-sc", serif;
-}
-
-.off-screen-menu.active {
-    right: 0;
-}
-
 
 nav {
-    padding: 1rem;
-    display: flex;
-    background-color:rgb(255, 211, 79);   
-}
-
-
-.hamburger {
-    height: 30px;
-    width: 30px;
-    margin-left: auto;
-    position: relative; 
-}
-
-.hamburger span {
-    height: 3px; 
     width: 100%;
-    background-color:rgb(59, 46, 41)
-    border-radius: 15px;
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease; 
+    padding 1rem 5%;
+    background: rgb(255, 253, 249);
+    border-bottom: 1.5px dashed rgb(31, 31, 31);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
 }
 
-.hamburger span:nth-child(1) {
-    top: 15%;
+.fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:0; 
+    width: 20px;
 }
 
-.hamburger.active span:nth-child(1){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+.nav-bar {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-.hamburger.active span:nth-child(2){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+.nav-bar li a {
+    position: relative;
+    font-size: 1.3rem;
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: rgba(31, 31, 31); 
+    transition: 0.3s;
 }
+
+.nav-bar li a:hover {
+    color: rgb(85, 85, 253);
+    text-shadow: 0 0 1px  rgb(201, 201, 255);
+}
+
+.bttns {
+    display: flex;
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+.search {
+    padding: 0.5rem 1.3rem; 
+    border-radius: 30px;
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background: rgb(31, 31, 31);
+    color: rgb(255, 255, 255); 
+    border: none;
+    cursor: help; 
+    transition: 0.3s;
+}
+
+.search:hover {
+ background: rgb(99, 99, 255);
+ box-shadow: 0 0 3px rgb(99, 99, 255);  
+}
+
+.rabbit {
+    width: 150px;
+    padding-top: 0.5rem;
+    margin-right: 575px; 
+}
+
+h1 {
+    display: flex;
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7rem;
+    padding-top: 10.8rem;
+    padding-left: 8.5rem;
+    font-size: 6.5rem;
+
+}
+
+.mandarin-translate h1.en {
+    font-size: 5rem;
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 700;
+    padding-left: 7.7rem;
+    padding-top: 13rem;
+}
+
+.bar {
+    justify-content: center;
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.open {
+    padding: 0.5rem 1.3rem; 
+    border-radius: 30px;
+    background: rgb(31, 31, 31);
+    color: rgb(255, 255, 255); 
+    border: none;
+    cursor: sw-resize; 
+}
+
+.enter p.english-translate {
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+.open:hover {
+ background: rgb(99, 99, 255);
+ box-shadow: 0 0 3px rgb(99, 99, 255);  
+}
+
+.announcement {
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+.back {
+    padding: 0.5rem 1.3rem; 
+    border-radius: 30px;
+    font-family: "louvette-pixel", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background: rgb(31, 31, 31);
+    color: rgb(255, 255, 255); 
+    border: none;
+    cursor: n-resize; 
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: rgb(99, 99, 255);
+    box-shadow: 0 0 3px rgb(99, 99, 255);  
+   }
