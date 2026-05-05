@@ -1,13 +1,16 @@
+@import url("https://use.typekit.net/ozd3gwa.css");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "tt-zhihei-chs-variable", sans-serif;
+    font-family: "louvettepixel-light", sans-serif;
+}
+body {
     background: rgb(255, 253, 249);
 }
-
 nav {
     width: 100%;
     padding 1rem 5%;
@@ -39,7 +42,7 @@ nav {
 .nav-bar li a {
     position: relative;
     font-size: 1.3rem;
-    font-family: "louvette-pixel", sans-serif;
+    font-family: "louvettepixel-light", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -61,7 +64,7 @@ nav {
 .search {
     padding: 0.5rem 1.3rem; 
     border-radius: 30px;
-    font-family: "louvette-pixel", sans-serif;
+    font-family: "louvettepixel-light", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     background: rgb(31, 31, 31);
@@ -82,27 +85,37 @@ nav {
     margin-right: 575px; 
 }
 
+.home header {
+    padding: 7rem;
+    padding-top: 10.8rem;
+    padding-left: 8.5rem;
+}
 h1 {
     display: flex;
-    font-family: "louvette-pixel", sans-serif;
+    font-family: "louvettepixel-light", sans-serif;
     font-weight: 600;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 7rem;
-    padding-top: 10.8rem;
-    padding-left: 8.5rem;
+    height: 7rem;
     font-size: 6.5rem;
 
 }
 
 .mandarin-translate h1.en {
     font-size: 5rem;
-    font-family: "louvette-pixel", sans-serif;
+    font-family: "louvettepixel-light", sans-serif;
     font-weight: 700;
-    padding-left: 7.7rem;
-    padding-top: 13rem;
+    padding: 3rem;
+
 }
+
+.english-translate .cn {
+    display: none;
+  }
+  .mandarin-translate .en {
+    display: none;
+  }
 
 .bar {
     justify-content: center;
@@ -123,10 +136,13 @@ h1 {
     border: none;
     cursor: sw-resize; 
 }
+a.open {
+    display:inline-block;
+}
 
 .enter p.english-translate {
-    font-family: "louvette-pixel", sans-serif;
-    font-weight: 100;
+    font-family: "louvettepixel-light", sans-serif;
+    font-weight: 400;
     font-size: 1.6rem;
 }
 
@@ -136,15 +152,21 @@ h1 {
 }
 
 .announcement {
-    font-family: "louvette-pixel", sans-serif;
+    display: flex;
+    font-family: "louvettepixel-light", sans-serif;
     font-weight: 700;
     font-size: 7rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7rem;
+    padding-top: 17rem;
 }
 
 .back {
     padding: 0.5rem 1.3rem; 
     border-radius: 30px;
-    font-family: "louvette-pixel", sans-serif;
+    font-family: "louvettepixel-light", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     background: rgb(31, 31, 31);

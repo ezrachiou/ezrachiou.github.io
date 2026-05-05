@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ABOUT</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-      .english-translate .cn {
-        display: none;
-      }
-      .mandarin-translate .en {
-        display: none;
-      }
-    </style>
   </head>
   <body>
     <nav>
-      <div class="bttns"><a href="search.html"><button class="search">嘿!</button></a></div>
+      <div class="bttns">
+        <a class="search" href="search.html">
+          <div class="mandarin-translate">
+            <p class="en" style="display: none;">Hey!</p>
+            <p class="cn" style="display: block;">嘿!</p>
+        </div>
+        </a></div>
       <div class="gif"><a href="index.html"><img class="rabbit" src="images/rabbit.png"></img></a></div>
       <ul class="nav-bar">
-          <li class="about"><a href="about.html">about</a></li>
-          <li class="hai"><a href="hai.html">嗨!</a></li>
+          <li class="about"><a href="about.html">About</a></li>
+          <li class="hai"><a href="hai.html">
+            <div class="mandarin-translate">
+              <p class="en" style="display: none;">Hi!</p>
+              <p class="cn" style="display: block;">嗨!</p>
+          </div></a></li>
       </ul>
-     
-  </nav>
+</nav>
+    
 
 <section>
     <div class="english-translate">
@@ -47,30 +49,11 @@
     </div>
   </section>
 
-  <script
-  src="https://code.jquery.com/jquery-4.0.0.min.js"
-  integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
-  crossorigin="anonymous"
-></script>
-
-<script>
-  $('.english-translate').mouseover(function () {
-    $(this).find('.en').css('display', 'none');
-    $(this).find('.cn').css('display', 'block');
-  });
-  $('.english-translate').mouseout(function () {
-    $(this).find('.en').css('display', 'block');
-    $(this).find('.cn').css('display', 'none');
-  });
-
-  $('.mandarin-translate').mouseover(function () {
-    $(this).find('.cn').css('display', 'none');
-    $(this).find('.en').css('display', 'block');
-  });
-  $('.mandarin-translate').mouseout(function () {
-    $(this).find('.cn').css('display', 'block');
-    $(this).find('.en').css('display', 'none');
-  });
-</script>
+ <script
+    src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
 </body>
 </html>
