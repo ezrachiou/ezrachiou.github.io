@@ -15,3 +15,10 @@ $('.mandarin-translate').mouseout(function () {
   $(this).find('.cn').css('display', 'block');
   $(this).find('.en').css('display', 'none');
 });
+
+
+$('#popup-bttn').click(
+  function(){
+    $('#popup-window').addClass('popup-show')
+  }
+)

@@ -10,18 +10,18 @@
 }
 body {
     background: rgb(255, 253, 249);
+    margin: 0;
 }
 nav {
     width: 100%;
     padding 1rem 5%;
     background: rgb(255, 253, 249);
-    border-bottom: 1.5px dashed rgb(31, 31, 31);
+    border-bottom: 1.5px dashed rgb(0, 114, 120);
     backdrop-filter: blur(15px);
     margin-bottom: 2rem;
-
     display: flex;
-    align-items:center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fa-search {
@@ -37,6 +37,7 @@ nav {
     display: flex;
     gap: 2rem;
     padding: 1rem;
+    padding-right: 1.5rem;
 }
 
 .nav-bar li a {
@@ -63,7 +64,7 @@ nav {
 
 .search {
     padding: 0.5rem 1.3rem; 
-    border-radius: 30px;
+    border-radius: 20px;
     font-family: "louvettepixel-light", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -72,6 +73,7 @@ nav {
     border: none;
     cursor: help; 
     transition: 0.3s;
+    align-items: center;
 }
 
 .search:hover {
@@ -82,7 +84,7 @@ nav {
 .rabbit {
     width: 150px;
     padding-top: 0.5rem;
-    margin-right: 575px; 
+    margin-right: 575px;
 }
 
 .home header {
@@ -180,3 +182,188 @@ a.open {
     background: rgb(99, 99, 255);
     box-shadow: 0 0 3px rgb(99, 99, 255);  
    }
+
+   .content {
+    display: flex; 
+    height: 100vh;
+    width: 100vw;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+   }
+
+   .centered {
+    width: 50vw;
+    border: 1px solid rgb(31, 31, 31);
+    
+   }
+
+   .popup-p {
+    text-align: center; 
+   }
+
+   .popup-bttn {
+    border: 1px solid rgb(31, 31, 31);
+    padding: 10px;
+        
+   }
+
+   .popup {
+    opacity: 0; 
+    position: absolute;
+    background: rgb(255, 253, 249);
+    width: 50vw;
+    height: 5vh;
+    overflow: scroll;
+    padding: 2rem;
+    border: 1px solid rgb(31, 31, 31);
+    z-index: -1;
+   }
+
+   #close-bttn {
+    position: absolute;
+    right: 1.5rem; 
+    top: 1.5rem;
+  }
+
+  .popup-show {
+    opacity: 1; 
+    z-index: 1;
+  }
+
+  .collage {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .collage img{
+    position: absolute;
+    max-width: 500px;
+  }
+
+  .collage p{
+    position: absolute; 
+
+  }
+
+  .saltines {
+    right:5%;
+    top: 1000px;
+    width: 210px;
+  }
+
+  .vert-cn-display-1 p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;  
+    font-size: 3.8rem;
+    top: 115px;
+    left: 10%;   
+    font-family: "louvettepixel-light", sans-serif;
+    font-weight: 550;
+    word-spacing: 0.7rem;
+  }
+
+  .vert-cn-display-1 p.en {
+    font-size: 3.3rem;
+    
+  }
+  
+  .main-pic-1 {
+    right: 22%;
+    top: 305px;
+    transform: rotate(1.7deg);
+    width: 370px;
+  }
+
+  .main-pic-2 {
+    left: 23%;
+    top: 120px; 
+    width: 490px; 
+    z-index: 1;
+    transform: rotate(-0.5deg);
+  }
+
+  .vert-cn-display-2 p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;  
+    font-size: 4.1rem;
+    top: 130px;
+    right: 10%;   
+    font-family: "louvettepixel-light", sans-serif;
+    font-weight: 550;
+    word-spacing: 0.7rem;
+  }
+
+  .vert-cn-display-2 p.en {
+    font-size: 2.8rem;
+    top:15px;
+  }
+
+ .main-p-1 p {
+    left: 23.5%;
+    top: 500px;
+    max-width: 27rem;
+    font-size: 1.1rem;
+    font-weight: 350;
+    text-align: center;
+    border: 1px black;
+  }
+
+  .baby-note p{
+    left: 43%;
+    top: 119px;
+    text-align: center;
+    font-weight: 50;
+    transform: rotate(-0.5deg);
+  }
+
+  .baby-note p.cn{
+    font-weight: 300;
+  }
+
+  .main-p-2 p {
+    left: 56%;
+    top: 130px;
+    max-width: 23rem;
+    font-size: 1rem;
+    font-weight: 350;
+    text-align: center;
+    transform: rotate(1.7deg);
+  }
+
+  .cn-display p { 
+    font-size: 3.5rem;
+    top: 800px;
+    left: 19%;   
+    font-family: "louvettepixel-light", sans-serif;
+    font-weight: 550;
+  }
+
+  .time-note p{
+    left: 54%;
+    top: 745px;
+    text-align: center;
+    font-weight: 50;
+    transform: rotate(1.7deg);
+    text-align: center;
+  }
+
+  .time-note p.cn{
+    font-weight: 300;
+  }
+
+  .above-cn-display p {
+    left: 19%;
+    font-size:4.1rem;
+    font-family: "louvettepixel-light", sans-serif;
+    font-weight: 550;
+    text-align: center;
+  }
+
+  .instructions p {
+    text-align: left;
+    left: 27%;
+    top: 885px; 
+    max-width: 700px;
+} 
