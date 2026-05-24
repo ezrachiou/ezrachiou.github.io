@@ -14,15 +14,18 @@ body {
 }
 nav {
     width: 100%;
-    padding 1rem 5%;
+    padding: .2rem;
     background: rgb(255, 253, 249);
-    border-bottom: 1.5px dashed rgb(0, 114, 120);
+    border-bottom: 1.5px dashed rgb(31, 31, 31);
     backdrop-filter: blur(15px);
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/* nav > div, nav ul {
+  border:1px solid red;
+} */
 
 .fa-search {
     position: absolute;
@@ -58,7 +61,6 @@ nav {
 
 .bttns {
     display: flex;
-    margin-right: auto;
     padding-left: 1rem;
 }
 
@@ -81,16 +83,16 @@ nav {
  box-shadow: 0 0 3px rgb(99, 99, 255);  
 }
 
+
 .rabbit {
     width: 150px;
     padding-top: 0.5rem;
-    margin-right: 575px;
+    /* margin-right: 575px; */
 }
 
 .home header {
     padding: 7rem;
     padding-top: 10.8rem;
-    padding-left: 8.5rem;
 }
 h1 {
     display: flex;
@@ -258,7 +260,7 @@ a.open {
     text-orientation: upright;  
     font-size: 3.8rem;
     top: 115px;
-    left: 10%;   
+    left: 8%;   
     font-family: "louvettepixel-light", sans-serif;
     font-weight: 550;
     word-spacing: 0.7rem;
@@ -270,15 +272,15 @@ a.open {
   }
   
   .main-pic-1 {
-    right: 22%;
-    top: 305px;
+    right: 26%;
+    top: 310px;
     transform: rotate(1.7deg);
     width: 370px;
   }
 
   .main-pic-2 {
-    left: 23%;
-    top: 120px; 
+    left: 18%;
+    top: 145px; 
     width: 490px; 
     z-index: 1;
     transform: rotate(-0.5deg);
@@ -289,7 +291,7 @@ a.open {
     text-orientation: upright;  
     font-size: 4.1rem;
     top: 130px;
-    right: 10%;   
+    left:  79%;
     font-family: "louvettepixel-light", sans-serif;
     font-weight: 550;
     word-spacing: 0.7rem;
@@ -297,21 +299,21 @@ a.open {
 
   .vert-cn-display-2 p.en {
     font-size: 2.8rem;
-    top:15px;
+    top:50px;
   }
 
  .main-p-1 p {
-    left: 23.5%;
-    top: 500px;
-    max-width: 27rem;
-    font-size: 1.1rem;
+    left: 18.5%;
+    top: 490px;
+    max-width: 27.5rem;
+    font-size: 1.15rem;
     font-weight: 350;
     text-align: center;
     border: 1px black;
   }
 
   .baby-note p{
-    left: 43%;
+    left: 39%;
     top: 119px;
     text-align: center;
     font-weight: 50;
@@ -323,8 +325,8 @@ a.open {
   }
 
   .main-p-2 p {
-    left: 56%;
-    top: 130px;
+    left: 51%;
+    top: 135px;
     max-width: 23rem;
     font-size: 1rem;
     font-weight: 350;
@@ -334,15 +336,15 @@ a.open {
 
   .cn-display p { 
     font-size: 3.5rem;
-    top: 800px;
-    left: 19%;   
+    top: 810px;
+    left: 15%;   
     font-family: "louvettepixel-light", sans-serif;
     font-weight: 550;
   }
 
   .time-note p{
-    left: 54%;
-    top: 745px;
+    left: 50%;
+    top: 750px;
     text-align: center;
     font-weight: 50;
     transform: rotate(1.7deg);
@@ -354,16 +356,99 @@ a.open {
   }
 
   .above-cn-display p {
-    left: 19%;
+    left: 16%;
     font-size:4.1rem;
     font-family: "louvettepixel-light", sans-serif;
     font-weight: 550;
     text-align: center;
+    top: 10px;
   }
 
   .instructions p {
     text-align: left;
-    left: 27%;
-    top: 885px; 
+    left: 23%;
+    top: 895px; 
     max-width: 700px;
 } 
+
+.blue-cn-note p { 
+  font-size: 1rem;
+  top: 280px;
+  left: 85%;   
+  font-family: "louvettepixel-light", sans-serif;
+  font-weight: 400;
+  word-spacing: 0.7rem;
+  max-width: 150px;
+}
+
+.blue-cn-note p.en {
+  writing-mode: horizontal-tb;
+  word-spacing: normal;
+  max-width: 157px;
+}
+
+.vert-cn-display-3 p {
+  writing-mode: vertical-lr;
+  text-orientation: upright;  
+  font-size: 3.8rem;
+  top: 495px;
+  left: 86%;   
+  font-family: "louvettepixel-light", sans-serif;
+  font-weight: 550;
+  word-spacing: 0.7rem;
+}
+
+.vert-cn-display-3 p.en {
+  font-size: 2.7rem;
+  max-height: 280px;
+}
+
+.back-to-top p {
+  font-size: 3rem;
+  bottom: -2490px;
+  left: 80%;
+  text-align: center;
+  text-decoration: none;
+  font-family: "louvettepixel-light", sans-serif;
+  font-weight: 600;
+  color: rgb(31, 31, 31);
+  padding-bottom: 2rem;
+}
+
+.back-to-top p:hover {
+  color: rgb(85, 85, 253);
+}
+
+.long-plant {
+  bottom: -2500px;
+  max-height: 750px;
+}
+
+.cars {
+  top: 2750px;
+  right: 0.1%;
+  z-index: -1;
+}
+
+.lychee {
+  max-height: 400px;
+  top: 1500px;
+}
+
+.highway {
+  max-height:350px;
+  top: 1200px;
+  border-radius: 3px;
+}
+
+.full-screen {
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 390;
+}
+
+.lotushead {
+  max-height: 300px;
+  top: 1300px;
+  left: 80%;
+}
