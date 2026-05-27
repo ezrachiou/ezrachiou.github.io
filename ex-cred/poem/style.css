@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: "Google Sans Code", monospace;
     background-size: cover;
+    margin: 0;
+    line-height: 2;
 }
 
 :root {
@@ -18,8 +20,9 @@ main {
     display: flex;
     flex-direction: column; 
     overflow-y: scroll;
-    scroll-snap-type: y mandatory; 
+    scroll-snap-type: y proximity; 
     scroll-snap-stop: always;
+    
 }
 
 section {

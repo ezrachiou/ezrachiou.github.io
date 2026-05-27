@@ -185,54 +185,6 @@ a.open {
     box-shadow: 0 0 3px rgb(99, 99, 255);  
    }
 
-   .content {
-    display: flex; 
-    height: 100vh;
-    width: 100vw;
-    align-items: center; 
-    justify-content: center;
-    position: relative;
-   }
-
-   .centered {
-    width: 50vw;
-    border: 1px solid rgb(31, 31, 31);
-    
-   }
-
-   .popup-p {
-    text-align: center; 
-   }
-
-   .popup-bttn {
-    border: 1px solid rgb(31, 31, 31);
-    padding: 10px;
-        
-   }
-
-   .popup {
-    opacity: 0; 
-    position: absolute;
-    background: rgb(255, 253, 249);
-    width: 50vw;
-    height: 5vh;
-    overflow: scroll;
-    padding: 2rem;
-    border: 1px solid rgb(31, 31, 31);
-    z-index: -1;
-   }
-
-   #close-bttn {
-    position: absolute;
-    right: 1.5rem; 
-    top: 1.5rem;
-  }
-
-  .popup-show {
-    opacity: 1; 
-    z-index: 1;
-  }
-
   .collage {
     position: relative; 
     height: 100vh;
@@ -451,4 +403,20 @@ a.open {
   max-height: 300px;
   top: 1300px;
   left: 80%;
+}
+
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  background:rgb(255, 253, 249);
+  color: rgb(31, 31, 31);
+  display: flex; 
+}
+
+.centered {
+  width: 70vw;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
 }
