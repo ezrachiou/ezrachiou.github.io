@@ -20,9 +20,9 @@ main {
     display: flex;
     flex-direction: column; 
     overflow-y: scroll;
-    scroll-snap-type: y proximity; 
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
     scroll-snap-stop: always;
-    
 }
 
 section {
