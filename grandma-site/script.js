@@ -15,3 +15,14 @@ $('.mandarin-translate').mouseout(function () {
   $(this).find('.cn').css('display', 'block');
   $(this).find('.en').css('display', 'none');
 });
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#popup-window', {
+        type: 'x, y'
+    });
+ });
+
+
