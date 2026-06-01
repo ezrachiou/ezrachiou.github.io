@@ -16,7 +16,7 @@
     --lavender: rgb(202, 186, 255); 
 }
 
-main {
+.scroll-snap {
     display: flex;
     flex-direction: column; 
     overflow-y: scroll;

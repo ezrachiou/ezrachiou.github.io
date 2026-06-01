@@ -29,14 +29,45 @@
         </ul>
        
     </nav>
+    <section class="hai">
+      <h1 class="announcement">嗨!</h1>
+      <p class="hai-p">如果你能读懂这段话（或者，如果你足够八卦，非要把它翻译出来看个究竟），嘿！你好啊！我必须向某人坦白一件事，否则我真的要疯了：这个网站上的大部分中文内容，其实都是我借助翻译软件完成的。从某种意义上说，这倒显得挺“贴切”的——毕竟，我平时给奶奶发短信时，用的也是这一套路。当然，为了在现有条件下尽可能准确地传达原意，这中间还是有一套操作流程的。（不过，如果你现在读到的是这个网站“首个”——但愿也是“最终”——的完工版本，那说明里面的翻译肯定还是漏洞百出。我打算等到暑假，等考完期末大考、没了学业压力之后，再回来把这些翻译好好修缮一番。）关于具体的翻译流程，我就不在此赘述了；你真正需要知道的，仅仅是我正在与你分享一个小秘密。我的中文水平还不足以让我随心所欲地表达心中所想，但我依然觉得，网站上必须得有中文翻译这一栏。我深爱着我的母语，哪怕我有时并不能完全理解它；我真心希望我的奶奶也能读懂并欣赏我所创作的这些内容——我想，这大概就是我做这一切的初衷吧。搭建这个网站的过程，其实也是我梳理并理解自身与奶奶、与语言、乃至与我当下生活境遇之间种种关系的过程。顺便一提，这段中文翻译本身也并不完美——抱歉啦！！</p>
+    </section>
+    <section class="collage-pop">
+      <p class="decoration-1-hai" id="decoration">&#10055</p>
+      <p class="decoration-2-hai" id="decoration">&#10055</p>
+      <p class="decoration-3-hai" id="decoration">&#10055</p>
+      <p class="decoration-4-hai" id="decoration">&#10055</p>
+      <p class="decoration-5-hai" id="decoration">&#10055</p>
+      <p class="decoration-6-hai" id="decoration">&#10055</p>
+      <p class="decoration-7-hai" id="decoration">&#10055</p>
+      <p class="decoration-8-hai" id="decoration">&#10055</p>
+    </section>
 
-    <main>
-      <h1 class="announcement">This will come!</h1>
-    </main>
-    <script
+    <script>
     src="https://code.jquery.com/jquery-4.0.0.min.js"
     integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
     crossorigin="anonymous"
-  ></script>
-    <script src="script.js"></script>
+  </script>
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+  
+ <script>
+  $('#popup-bttn').click(
+      function(){
+         $('#popup-window').addClass('show')
+      }
+  )
+
+  $('#close-bttn').click(
+      function(){
+         $('#popup-window').removeClass('show')
+      }
+  )
+  </script>
+
+<script src="script.js"></script> 
 </body>

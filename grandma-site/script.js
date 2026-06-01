@@ -25,4 +25,70 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
  });
 
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#milkplant', {
+        type: 'x, y'
+    });
+ });
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#balcony-1', {
+        type: 'x, y'
+    });
+ });
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#tucked', {
+        type: 'x, y'
+    });
+ });
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#window', {
+        type: 'x, y'
+    });
+ });
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#plants', {
+        type: 'x, y'
+    });
+ });
+
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#image', {
+        type: 'x, y'
+    });
+ });
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+  
+    Draggable.create('#decoration', {
+        type: 'x, y'
+    });
+ });
+
+
+
+
+
+
+
+
+
+
 

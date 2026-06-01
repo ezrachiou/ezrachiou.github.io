@@ -21,6 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: none;
 }
 /* nav > div, nav ul {
   border:1px solid red;
@@ -93,6 +94,7 @@ nav {
     padding: 7rem;
     padding-top: 14.8rem;
 }
+
 h1 {
     display: flex;
     font-family: "louvettepixel-light", sans-serif;
@@ -156,16 +158,23 @@ a.open {
  box-shadow: 0 0 3px rgb(99, 99, 255);  
 }
 
+.hai {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 5rem;
+}
+
 .announcement {
-    display: flex;
     font-family: "louvettepixel-light", sans-serif;
-    font-weight: 700;
-    font-size: 7rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 7rem;
-    padding-top: 17rem;
+    font-weight: 600;
+    font-size: 10rem;
+}
+
+.hai-p {
+  width: 60vw;
+  margin-top: 250px;
+  font-size: 1.1rem;
 }
 
 .back {
@@ -358,7 +367,7 @@ a.open {
 
 .back-to-top p {
   font-size: 3rem;
-  bottom: -2490px;
+  bottom: -1660px;
   left: 80%;
   text-align: center;
   text-decoration: none;
@@ -373,25 +382,27 @@ a.open {
 }
 
 .long-plant {
-  bottom: -2500px;
+  bottom: -1700px;
   max-height: 750px;
 }
 
 .cars {
-  top: 2750px;
-  right: 0.1%;
+  top: 1955px;
+  right: 1%;
   z-index: -1;
 }
 
 .lychee {
   max-height: 400px;
-  top: 1500px;
+  top: 1000px;
 }
 
 .highway {
   max-height:350px;
-  top: 1200px;
+  top: 1480px;
   border-radius: 3px;
+  left: 8%;
+  transform: rotate(-1.7deg);
 }
 
 .full-screen {
@@ -403,7 +414,7 @@ a.open {
 .lotushead {
   max-height: 300px;
   top: 1300px;
-  left: 80%;
+  left: 78%;
 }
 
 /* popup code */
@@ -415,6 +426,7 @@ a.open {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x: none; 
 }
 
 .popup-head {
@@ -447,12 +459,17 @@ a.open {
   opacity: 0;
   position: absolute;
   background: rgb(255, 253, 249);
-  width: 50vw;
+  width: 52vw;
   height: 50vh;
   overflow-y: scroll;
   border: 1px solid rgb(31, 31, 31);
   padding: 60px;
   z-index: -1;
+  margin-top: -3rem;
+}
+
+.popup-text {
+  font-size: 1.05rem;
 }
 
 .show {
@@ -465,4 +482,157 @@ a.open {
   right: 20px;
   top: 20px;
   font-size: 1.3rem;
+}
+
+.lotus-seeds {
+  width: 250px;
+  top: -430px;
+  /* z-index: -1; */
+  left: 21%;
+}
+
+.lotushead-pop {
+  width: 290px;
+  top: -777px;
+  left: 80%;
+}
+
+.collage-pop {
+  position: relative; 
+  width: 100vw;
+}
+
+.collage-pop img{
+  position: absolute;
+  max-width: 500px;
+}
+
+.collage-pop p{
+  position: absolute; 
+}
+
+.milkplant {
+  width: 330px;
+  top: -500px;
+}
+
+.balcony-1 {
+  width: 370px;
+  top: -800px;
+  right: 4%;
+}
+
+.window {
+  width: 350px; 
+  top: -800px;
+  left: 11%
+}
+
+.plants {
+  top: -310px;
+  width: 350px;
+  right: 19%;
+}
+
+.tucked {
+  width: 330px;
+  top: -320px;
+  left: 21%;
+}
+
+
+.popup-inside {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+}
+
+.fruit-shop {
+  width: 350px; 
+  left: 3.5%;
+  top: -780px;
+}
+
+.chair {
+  width: 250px;
+  top: -495px;
+  right: 14%;
+}
+
+.decoration-1 {
+  font-size: 2.5rem;
+  color:rgb(31, 31, 31);
+  top: -830px;
+  left: 26.6%;
+  transform: rotate(-25deg);
+}
+
+.decoration-2 {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  top: -315px;
+  left: 1.6%;
+  transform: rotate(25deg);
+}
+.decoration-1-hai {
+  font-size: 2.5rem;
+  color:rgb(31, 31, 31);
+  top: -430px;
+  left: 26.6%;
+  transform: rotate(-25deg);
+}
+
+.decoration-2-hai {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  top: 170px;
+  left: 45%;
+  transform: rotate(29deg);
+}
+
+.decoration-3-hai {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  top: 100px;
+  left: 11%;
+  transform: rotate(120deg);
+}
+
+.decoration-4-hai {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  top: -360px;
+  left: 67%;
+  transform: rotate(-150deg);
+}
+
+.decoration-5-hai {
+  font-size: 2.5rem;
+  color:rgb(31, 31, 31);
+  top: -280px;
+  left: 3%;
+  transform: rotate(25deg);
+}
+
+.decoration-6-hai {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  left: 84%;
+  top: 30px;
+  transform: rotate(75deg);
+}
+
+.decoration-7-hai {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  top: -300px;
+  left: 92%;
+  transform: rotate(-140deg);
+}
+
+.decoration-8-hai {
+  font-size: 2.7rem;
+  color:rgb(31, 31, 31);
+  top: -80px;
+  left: 20.8%;
+  transform: rotate(-130deg);
 }
