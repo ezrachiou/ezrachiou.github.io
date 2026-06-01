@@ -40,7 +40,7 @@
             <p class="popup-inside">I hadn't seen fresh lotus pods sold before, nor since. I remember being at least a bit enthralled: this was either the same summer or one after the year my grandma had taken me to different parks around the city, parks where I'd seen beautiful, full ponds of lotus plants. Something about them has stuck in my mind even this many years later, so it's no wonder I'd been curious back then. My grandma must’ve been familiar with them in one way or another (someday soon I should ask how), and we ended up bringing a few heads home. In our living room together she showed me how to break open the pods, peel the outer plant back from the encased seeds. When you’ve harvested each seed, the pod has done its work and can be thrown away. There are only so many seeds per head; because of this, each one is precious.</p>
             <p class="popup-inside">Lotus seeds have a thin casing meant to be removed. Once you do so, you’ll see that there’s a natural cleft down the center which makes them easy to part, two halves connected most by where the plumule sprouts from within. I learned, perhaps from experience but certainly from my grandma, that the plumule of a lotus seed is incredibly bitter. We put each one aside and enjoy the seeds instead, the delightful crunch and subtle, nutty flavor. They can be called nuts but are much softer, solid but easier to break—I was so enamoured by them that we went back to visit the same uncle many times that summer.</p>
             <p class="popup-inside">My grandma and I would would sit side–by–side in chairs that must've been quite old, the TV running a news or performance program, maybe the occasional sports if there was a big event. Piece by piece, our hands revealed and removed each layer. Pod, then casing. Each seed broken in two, plumules picked out and set aside. After our careful work, and surely in–between, we had treasures to be enjoyed. It was a slow yet brief process filled with care. Each trip to retrieve the stalks, too, carried more than I knew. There was so much love shared through action, time spent together.</p>
-            <p class="popup-inside">Time has a way of helping make sense of what we’ve lived. I wish I’d treasured each moment more, that I could remember better the time I had with my grandma. I was struggling to bear things I could not yet recognize, as many young people are. It unfortunately remains true, in spite of any regret, that the past is unchangable; we can only use the experience it gave to shape the future. I want to peel lotus seeds for her someday soon.</p>
+            <p class="popup-inside">Time has a way of helping make sense of what we’ve lived. I wish I’d treasured each moment more, that I could remember better the time I had with my grandma. I was struggling to bear things I could not yet recognize as many young people are, and it unfortunately remains true that the past is unchangable in spite of any regret; we can only use the experience it gave to shape the future. I want to peel lotus seeds for her someday soon.</p>
         </div>
     </section>
     <section class="collage-pop">
@@ -50,7 +50,17 @@
         <img class="lotus-seeds" id="image" src="images/lotus-seeds.png">
         <p class="decoration-1" id="decoration">&#10055</p>
         <p class="decoration-2" id="decoration">&#10055</p>
+
+        <div class="back-pop">
+            <a href="main.html">
+                <div class="english-translate">
+                    <p class="en" style="display: block;">Go Back!</p>
+                    <p class="cn" style="display: none;">回去, 回去!</p>
+                </div>
+            </a>
+        </div>
     </section>
+    
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
@@ -60,13 +70,13 @@
    <script>
     $('#popup-bttn').click(
         function(){
-           $('#popup-window').addClass('show')
+           $('#popup-window').addClass('show').css('z-index', '1')
         }
     )
 
     $('#close-bttn').click(
         function(){
-           $('#popup-window').removeClass('show')
+           $('#popup-window').removeClass('show').css('z-index', '-1')
         }
     )
     </script>

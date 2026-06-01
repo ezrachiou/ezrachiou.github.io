@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/ozd3gwa.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 
 *{
     margin: 0;
@@ -11,6 +12,11 @@
 body {
     background: rgb(255, 253, 249);
     margin: 0;
+    font-size: 1rem;
+}
+
+.cn {
+  font-family: "Noto Sans SC", sans-serif;
 }
 nav {
     width: 100%;
@@ -139,12 +145,13 @@ h1 {
     padding: 0.5rem 1.3rem; 
     border-radius: 30px;
     background: rgb(31, 31, 31);
-    color: background: rgb(255, 253, 249);
     border: none;
     cursor: sw-resize; 
+    text-decoration: none;
 }
-a.open {
-    display:inline-block;
+
+.enter a {
+  color: rgb(255, 253, 249);
 }
 
 .enter p.english-translate {
@@ -166,15 +173,16 @@ a.open {
 }
 
 .announcement {
-    font-family: "louvettepixel-light", sans-serif;
     font-weight: 600;
     font-size: 10rem;
+    font-family: "Noto Sans SC", sans-serif;
 }
 
 .hai-p {
   width: 60vw;
   margin-top: 250px;
   font-size: 1.1rem;
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 .back {
@@ -195,10 +203,19 @@ a.open {
     box-shadow: 0 0 3px rgb(99, 99, 255);  
    }
 
+   main { 
+    min-height: 100vh; 
+    width: 80vw;
+    margin: 0 auto; 
+
+   }
+
   .collage {
     position: relative; 
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
 
   .collage img{
@@ -230,7 +247,6 @@ a.open {
 
   .vert-cn-display-1 p.en {
     font-size: 3.3rem;
-    
   }
   
   .main-pic-1 {
@@ -500,6 +516,7 @@ a.open {
 .collage-pop {
   position: relative; 
   width: 100vw;
+
 }
 
 .collage-pop img{
@@ -554,7 +571,7 @@ a.open {
 
 .chair {
   width: 250px;
-  top: -495px;
+  top: -515px;
   right: 14%;
 }
 
@@ -641,4 +658,11 @@ a.open {
   top: -700px;
   width: 370px;
   left: 3%;
+}
+
+.back-pop p {
+  font-size: 2rem;
+  bottom: 115px;
+  left: 4%;
+  font-weight: 500;
 }
