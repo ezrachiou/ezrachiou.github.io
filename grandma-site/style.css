@@ -679,6 +679,13 @@ h1 {
   font-weight: 500;
 }
 
+.back-pop-garden p {
+  font-size: 2rem;
+  margin-top: -10%;
+  right: 4%;
+  font-weight: 500;
+}
+
 /* alanna rewrite */
 .intro {
   display: grid;
